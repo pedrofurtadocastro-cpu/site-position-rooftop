@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*COISAS QUE AFETA TODO O SITE*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*BANNER - PRIMEIRA COISA QUE SE VER AO ENTRAR NO SITE*/
+.cabecalho {
+    z-index: 999 !important;
+}
+
+header ul a {
+    padding: 10px 0;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 450;
+    text-transform: uppercase;
+    padding-right: -5rem;
+    padding-left: -5rem;
+    transition: 0.5s ease;
+}
+
+header ul li {
+    display: inline-block;
+    width: 4%;
+    margin-right: 30px;
+}
+
+header ul li a {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    padding: 0;
+}
+
+header>a:hover {
+    color: #ad9966;
+}
+
+.dropdown {
+    background-color: #fff;
+    padding-right: 10px;
+}
+
+#logo {
+    width: 20%;
+    padding-top: 20px;
+    vertical-align: middle;
+    padding-left: 1%;
+}
+
+#logo img {
+    position: relative;
+    align-items: center;
+    padding-left: 5%;
+    width: 77px;
+    height: 79px;
+}
+
+header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+header ul a {
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+
+header>p {
+
+    font-size: 15px;
+    margin: 0 0 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+#section1 {
+    height: 55vh;
+    width: 100%;
+    background-image: url(banner-bg-cortado.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin-bottom: -7px;
+}
+
+.home-banner-text {
+    width: 40%;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    top: 30%;
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.home-banner-text h1 {
+    letter-spacing: 10px;
+    font-size: larger;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: -10%;
+}
+
+.home-banner-text p {
+    font-weight: 400;
+    padding-top: 40px;
+    font-size: 15px;
+    margin: 0 0 50px;
+    font-family: "Roboto", sans-serif;
+
+}
+.home-banner-text hr{
+    height: 1px;
+    width: 70%;
+    position: absolute;
+    left: 14%;
+    font-weight: 100;
+}
+
+/*PARTE ABAIXO DO BANNER - MENU E OUTRAS COISAS---------------------*/
+
+#button-menu a {
+    text-decoration: none;
+    color: #FAF5F0;
+}
+
+#button-menu a:hover {
+    color: #ad9966;
+    transition: 0.5s ease;
+}
+
+.menu-esquerdo {
+    display: inline-block;
+    padding-bottom: 30vh;
+    width: 35%;
+    font-size: larger;
+    letter-spacing: 7px;
+    margin: 80px;
+}
+
+.menu-esquerdo h1 {
+    font-family: "Playfair Display", serif;
+    color: rgb(0, 0, 0);
+}
+
+.menu-esquerdo p {
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu-direito {
+    position: absolute;
+    vertical-align: middle;
+    display: inline-block;
+    width: 40%;
+    height: 130%;
+    background-color: #faf5f0;
+    text-align: center;
+    z-index: -10;
+}
+
+.menu-direito hr {
+    width: 13vh;
+    height: 2px;
+    text-align: center;
+    border: none;
+    margin: auto;
+    background-color: #7777774e;
+}
+
+.menu-direito p {
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.menu-direito dd {
+    color: #464646c1;
+    margin-top: 10px;
+    margin-bottom: -2vh;
+}
+
+.menu-direito h3 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.menu-direito h3 {
+    font-family: "Playfair Display", serif;
+    color: #000;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.corpo-do-site {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    margin-right: 12vh;
+}
+
+#titulo-daily {
+    padding-top: 20vh;
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 7.2px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#button-menu {
+    line-height: 48px;
+    padding: 0 30px;
+    border-radius: 0px;
+    background: #ad9966;
+    border: 1px solid #ad9966;
+    color: #fff;
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    letter-spacing: 2px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+#button-menu:hover {
+    text-decoration: none;
+    color: #ad9966;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+.button-collapse {
+    position: relative;
+}
+
+.button-collapse>ul {
+    padding: 0;
+    position: absolute;
+    width: 150%;
+    height: 15vh;
+    padding-top: 5vh;
+    z-index: -10;
+    background-color: aliceblue;
+    opacity: 0;
+    text-align: center;
+    list-style: none;
+
+}
+
+.button-collapse li {
+    height: 5vh;
+}
+
+.button-collapse:hover ul {
+    opacity: 1;
+    z-index: 10;
+}
+
+.aperetivo {
+    padding-top: 120px;
+    margin-bottom: 50px;
+}
+
+.drinks hr {
+    width: 20vh;
+}
+
+.course hr {
+    width: 18vh;
+
+}
+
+/*BOTÕES DO LADO DA TELA - USADOS PARA LEVAR AO VIEW MENU E BOOK A TABLE*/
+
+.view {
+    width: 92px;
+    height: 180px;
+    background-image: url(view-menu-rooftop.png);
+    position: fixed;
+    top: 40%;
+    line-height: 180px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.book {
+    width: 92px;
+    height: 180px;
+    background-image: url(book-table.png);
+    position: fixed;
+    top: 40%;
+    z-index: 1;
+    left: 190vh;
+    line-height: 180px;
+    transition: 0.5s;
+}
+
+.view a {
+    transform: rotate(90deg);
+    display: inline-block;
+    transition: 0.5s;
+    color: black;
+}
+
+.book a {
+    transform: rotate(-90deg);
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.view:hover a {
+    transform: rotate(0deg);
+}
+
+.book:hover a {
+    transform: rotate(0deg);
+}
+
+.botaos-do-lado .book a {
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+}
+
+.botaos-do-lado .view a {
+    text-decoration: none;
+    outline: 0;
+}
+
+/*CHEFE-------------------------------------------------------------*/
+
+.cozinheiro {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 182%;
+    right: 100vh;
+    width: 648;
+    height: 450;
+    z-index: 0;
+    margin-bottom: 10vh;
+}
+
+.quotes {
+    display: inline-block;
+    position: relative;
+    width: 545px;
+    left: 64%;
+    top: 250%;
+    padding-top: 10vh;
+}
+
+.quotes>h3 {
+    text-align: start;
+    color: #000000c1;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 10%;
+    letter-spacing: 7.2px;
+}
+
+.quotes>p {
+    text-align: start;
+    color: #464646c1;
+    letter-spacing: 0.1px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.signature {
+    position: absolute;
+    top: 270%;
+    left: 60%;
+    margin-bottom: 10vh;
+}
+
+/*FRANGO------------------------------------------------------------*/
+
+#Chicken {
+    padding-top: 27%;
+    padding-bottom: 27%;
+}
+
+.chicken {
+    background-image: url(callaction-bg.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 80vh;
+    width: 90%;
+}
+
+/*FOOTER------------------------------------------------------------*/
+.footer-titulo {
+    background-color: #04091e;
+    height: 50vh;
+    margin-top: 10%;
+    padding-left: 12%;
+}
+
+.footer-titulo>ul {
+    display: inline-block;
+    padding-top: 10vh;
+}
+
+.footer-titulo>ul>li {
+    display: inline-block;
+}
+
+.footer-titulo h4 {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.footer-titulo>ul {
+    color: #f6e1af4e;
+}
+
+#newsletter {
+    position: absolute;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+#enter-email {
+    width: 40vh;
+    height: 40px;
+    background: transparent;
+    border: bold 1px #f6e1af80;
+}
+
+#copyright {
+    color: #f6e1af4e;
+    padding-top: 6vh;
+}
+
+#copyright>span{
+    color: #ad9966;
+}
